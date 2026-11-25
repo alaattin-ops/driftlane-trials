@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://q3m5uwacv81v"]
+
+[ext_resource type="Script" uid="uid://bamgye2c582kx" path="res://bear_hunter.gd" id="1_a202f"]
+
+[node name="Node3D" type="Node3D" unique_id=889658353]
+script = ExtResource("1_a202f")

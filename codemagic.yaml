@@ -1,0 +1,30 @@
+workflows:
+  driftlane-trials-ios:
+    name: Driftlane Trials iOS
+    instance_type: mac_mini_m2
+    max_build_duration: 45
+    integrations:
+      app_store_connect: Codemagic
+    environment:
+      xcode: '26.6'
+      ios_signing:
+        distribution_type: app_store
+        bundle_identifier: com.alaat.driftlanetrials
+    cache:
+      cache_paths:
+        - $HOME/.cache/driftlane-godot
+    scripts:
+      - name: Export Xcode project
+        script: bash ci/export-ios.sh
+      - name: Sign and build IPA
+        script: |
+          set -euo pipefail
+          xcode-project use-profiles --project _xcode/DriftlaneTrials.xcodeproj
+          xcode-project build-ipa --project _xcode/DriftlaneTrials.xcodeproj --scheme DriftlaneTrials
+    artifacts:
+      - build/ios/ipa/*.ipa
+    publishing:
+      app_store_connect:
+        auth: integration
+        submit_to_testflight: false
+        submit_to_app_store: false

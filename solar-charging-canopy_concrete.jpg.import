@@ -1,0 +1,45 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://br3e81c4uj3hj"
+path.s3tc="res://.godot/imported/solar-charging-canopy_concrete.jpg-bfdaf13f654934130ad6390c87db6a92.s3tc.ctex"
+path.etc2="res://.godot/imported/solar-charging-canopy_concrete.jpg-bfdaf13f654934130ad6390c87db6a92.etc2.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "e9acbfa1b175c63a3524eff07b47131a"
+}
+
+[deps]
+
+source_file="res://solar-charging-canopy_concrete.jpg"
+dest_files=["res://.godot/imported/solar-charging-canopy_concrete.jpg-bfdaf13f654934130ad6390c87db6a92.s3tc.ctex", "res://.godot/imported/solar-charging-canopy_concrete.jpg-bfdaf13f654934130ad6390c87db6a92.etc2.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/uastc_level=0
+compress/rdo_quality_loss=0.0
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/channel_remap/red=0
+process/channel_remap/green=1
+process/channel_remap/blue=2
+process/channel_remap/alpha=3
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0

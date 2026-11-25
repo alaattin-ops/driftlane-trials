@@ -1,0 +1,14 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+*.apk
+*.aab
+*.ipa
+*.p12
+*.p8
+*.keystore
+*.mobileprovision
+.env*
+/_xcode/
+/build/
